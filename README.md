@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title> Your Bank </title>
+    <link rel="icon" type="image" href="Bank Logo.jpg">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+</head>
+<body>
+    <div id="login-area" class="mt-5">
+        <h1 
+        class="text-center">Welcome To Your Bank</h1>
+        <div id="login-box" class="container rounded p-5 shadow mt-5">
+            <h3>Please provide me with your bank login ID and password.</h3>
+            <input type="text" class="form-control" placeholder="Email">
+            <br>
+            <input type="text" class="form-control" placeholder="password">
+            <br>
+            <button id="submit-btn" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+
+    <div id="dashboard" class="d-none mt-5 container">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-3 bg-info ms-5 p-4 rounded">
+                <h2>Your Deposit</h2>
+                <p class="fs-3">
+                    $ <span id="deposit">0</span>
+                </p>
+            </div>
+            <div class="col-md-3 bg-success ms-5 p-4 rounded">
+                <h2>Your Withdraw</h2>
+                <p class="fs-3">
+                    $ <span id="withdraw">0</span>
+                </p>
+            </div>
+
+            <div class="col-md-3 bg-primary ms-5 p-4 rounded">
+                <h2>Your Balance</h2>
+                <p class="fs-3">
+                    $ <span id="balance">1200</span>
+                </p>
+            </div> 
+        </div>
+        <div id="input-section" class="mt-5 d-flex justify-content-center">
+            <div class="col-md-5 container rounded shadow p-4">
+                <h3>Your Deposit.</h3>
+                <input type="number" class="form-control" id="deposit-input" placeholder="Deposit">
+                <br>
+                <button class="btn btn-success" id="deposit-btn">Your Deposit.</button>
+            </div>
+            <div class="col-md-5 container rounded shadow p-4">
+                <h3>Your Withdraw.</h3>
+                <input type="number" class="form-control" id="withdraw-input" placeholder="Withdraw">
+                <br>
+                <button class="btn btn-success" id="withdraw-btn">Your Withdraw.</button>
+            </div>
+        </div>
+   </div>
+    
+   <script src="./Your Bank.js"></script>
+</body>
+</html>
